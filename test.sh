@@ -35,7 +35,7 @@ echo "Output values tests"
 out_test=`echo $?`
 if [[ out_test -eq 0 ]]
 then
-    if [[ `cat output_sample` == `cat output.txt` ]]
+    if [[ `cat output_sample.txt` == `cat output.txt` ]]
     then
         echo "Test passed"
         exit 0
