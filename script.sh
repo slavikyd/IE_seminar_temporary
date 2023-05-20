@@ -24,3 +24,7 @@ if [[ ! -f $output ]]
 then
     touch $output
 fi
+
+cat $input | sort -k2,2r -k3,3r > temp
+head -n $seats temp > $output
+rm temp
