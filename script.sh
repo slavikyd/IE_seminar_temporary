@@ -25,6 +25,6 @@ then
     touch $output
 fi
 
-cat $input | sort -k2,2r -k3,3r > temp
+cat $input | sed 's/N/Z/g' | sort -k2nr -k3nr -k4 -k1 | sed 's/Z/N/g' > temp
 head -n $seats temp > $output
 rm temp
