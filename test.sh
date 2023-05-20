@@ -51,6 +51,6 @@ then
         done
     done
 else
-    then
         echo "Test failed"
         exit 1
+fi
