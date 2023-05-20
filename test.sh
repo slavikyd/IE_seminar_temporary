@@ -31,8 +31,7 @@ else
 fi
 
 echo "Output values tests"
-echo "First input sample"
-./script.sh -f input.txt -o output.txt -t 3
+./script.sh -f test.txt -o output.txt -t 3
 out_test=`echo $?`
 if [[ out_test -eq 0 ]]
 then
